@@ -7,6 +7,10 @@
   border-radius: var(--size-2);
   overflow: hidden;
   padding-block: var(--space-lg);
+
+  &--home {
+    min-height: var(--size-14);
+  }
 }
 
 .navbar {
@@ -24,4 +28,11 @@
     gap: var(--space-sm);
     list-style: none;
   }
+}
+
+.footer {
+  background-color: var(--color-neutral-cream);
+  border-radius: var(--size-2);
+  padding-block: var(--space-lg);
+  margin-block-start: auto;
 }
