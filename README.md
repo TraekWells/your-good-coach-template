@@ -1,1 +1,1 @@
-# your-good-coach-template
+# Your Good Coach Template
