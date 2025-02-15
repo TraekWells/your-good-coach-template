@@ -1,10 +1,10 @@
-@import "https://unpkg.com/pollen-css/dist/pollen.css";
-
 :root {
   --color-primary-lightest: hsl(171, 33%, 96%);
   --color-primary-lighter: hsl(166, 73%, 52%);
   --color-primary-light: hsl(165, 87%, 35%);
   --color-primary: hsl(165, 96%, 19%);
+  --color-primary-dark: hsl(165, 98%, 14%);
+  --color-primary-darkest: hsl(165, 100%, 9%);
 
   --color-secondary-light: hsl(45, 49%, 68%);
   --color-secondary: hsl(45, 66%, 48%);
@@ -12,4 +12,13 @@
 
   --color-neutral-white: hsl(0, 0%, 100%);
   --color-neutral-cream: hsl(27, 69%, 97%);
+
+  --color-ink: var(--gray-10);
+
+  --space-xs: var(--size-1);
+  --space-sm: var(--size-2);
+  --space-md: var(--size-3);
+  --space-lg: var(--size-5);
+  --space-xl: var(--size-7);
+  --space-xxl: var(--size-9);
 }
