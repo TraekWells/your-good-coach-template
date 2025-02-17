@@ -4,7 +4,7 @@
 
 .header {
   background-color: var(--color-neutral-cream);
-  border-radius: var(--size-2);
+  border-radius: var(--size-4);
   overflow: hidden;
   padding-block: var(--space-lg);
   position: relative;
@@ -118,5 +118,5 @@
 }
 
 .section {
-  padding-block: var(--space-xxl);
+  padding-block: var(--space-2xl);
 }

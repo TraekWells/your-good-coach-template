@@ -4,12 +4,23 @@
 
 .demphasized {
   display: block;
-  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-normal);
 }
 
 .emphasized {
   display: block;
   color: var(--color-primary-dark);
-  font-size: var(--font-size-2xl);
+}
+
+.margin-bottom-2xl {
+  margin-block-end: var(--space-2xl);
+}
+
+.background-cream {
+  background-color: var(--color-neutral-cream);
+  border-radius: var(--border-size-4);
+}
+
+.centered-text {
+  text-align: center;
 }

@@ -15,8 +15,19 @@ h6 {
   color: var(--color-ink);
 }
 
-h1 {
+.header-2xl {
+  font-size: var(--font-size-2xl);
+}
+
+.header-xl {
   font-size: var(--font-size-xl);
+}
+
+.header-lg {
+  font-size: var(--font-size-large);
+}
+
+h1 {
   line-height: var(--font-lineheight-1);
 }
 
