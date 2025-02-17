@@ -31,45 +31,131 @@
             <a class="navbar__link" href="#">About</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#"><strong>Shop</strong></a
-            ><svg
-              class="navbar__icon"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="#323232">
-                <path
-                  d="M16.41 6.51l-9.9 9.9c-.3.29-.3.76 0 1.06 .29.29.76.29 1.06 0l9.9-9.9c.29-.3.29-.77 0-1.07 -.3-.3-.77-.3-1.07 0Z"
-                />
-                <path
-                  d="M9.99 7.74l6.95.04 -.75-.75 .05 6.951c0 .41.34.74.75.74 .41-.01.74-.35.74-.76l-.05-6.951c-.01-.42-.34-.75-.75-.75l-6.95-.05c-.42-.01-.76.33-.76.74 -.01.41.33.75.74.75Z"
-                />
-              </g>
-              <path fill="none" d="M0 0h24v24H0Z" />
-            </svg>
+            <a class="navbar__link button" href="#"
+              ><strong>Shop</strong>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-up-right navbar__icon"
+              >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </a>
           </li>
         </ul>
       </nav>
       <div class="container">
         <div class="header__content">
           <h1>
-            <span>The Confidence to Start.</span
-            ><span class="emphasized">The Mindset to Grow.</span>
+            <span class="demphasized">The Confidence to Start.</span
+            ><span class="emphasized">The <span>Mindset</span> to Grow.</span>
           </h1>
-          <p>
+          <p class="lead">
             With the right coaching, your goals aren’t just possible,
             <strong>they’re inevitable.</strong>
           </p>
-          <a href="#">Book a free consultation</a>
+          <a href="#" class="button button__primary"
+            >Book a free consultation
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-move-right"
+            >
+              <path d="M18 8L22 12L18 16" />
+              <path d="M2 12H22" />
+            </svg>
+          </a>
         </div>
       </div>
       <img
-        src="/public/images/hero-image.png"
+        src="/images/hero-image.png"
         alt="Hero image"
         class="header__image"
       />
     </header>
-    <main>Content here</main>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="grid">
+            <div class="col-6">
+              <h2>The Confidence Gap is Real But It’s Not Permanent.</h2>
+            </div>
+            <div class="col-5">
+              <p>
+                Fear and doubt stop women from launching their dream business.
+                As Your Good Coach, I’ll help shift your mindset and build
+                confidence.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="col-4">
+              <div class="card">
+                <img
+                  src="/images/card-1.jpg"
+                  class="card__image"
+                  alt="Woman sitting on the beach"
+                />
+                <div class="card__content">
+                  <h3>The Fear Factor</h3>
+                  <p>
+                    Fear feels real, but it doesn’t have to define you. Every
+                    successful journey starts with uncertainty.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <img
+                  src="/images/card-2.jpg"
+                  class="card__image"
+                  alt="Woman sitting on the beach"
+                />
+                <div class="card__content">
+                  <h3>From Doubt to Action</h3>
+                  <p>
+                    The best way to build confidence? Start. Small steps lead to
+                    big breakthroughs.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <img
+                  src="/images/card-3.jpg"
+                  class="card__image"
+                  alt="Woman sitting on the beach"
+                />
+                <div class="card__content">
+                  <h3>Confidence is Built, Not Born</h3>
+                  <p>
+                    Confidence isn’t a gift—it’s a skill. The more you take
+                    action, the stronger it grows.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <p>

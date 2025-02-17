@@ -17,5 +17,13 @@ h6 {
 
 h1 {
   font-size: var(--font-size-xl);
-  line-height: var(--font-lineheight-0);
+  line-height: var(--font-lineheight-1);
+}
+
+strong:not(.prose) {
+  color: var(--color-primary-dark);
+}
+
+.lead {
+  font-size: var(--font-size-medium);
 }

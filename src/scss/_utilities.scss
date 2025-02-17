@@ -2,6 +2,12 @@
   font-weight: var(--font-weight-bold);
 }
 
+.demphasized {
+  display: block;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+}
+
 .emphasized {
   display: block;
   color: var(--color-primary-dark);
