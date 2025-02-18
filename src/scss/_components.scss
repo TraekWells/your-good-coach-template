@@ -16,10 +16,18 @@ img {
   border-radius: var(--border-size-4);
 }
 
+.card-group--vertical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
 .card {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  padding: var(--space-lg);
+  border-radius: var(--border-size-4);
 
   &__image {
     width: 100%;

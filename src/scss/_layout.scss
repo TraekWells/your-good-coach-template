@@ -1,5 +1,9 @@
 .container {
   margin-inline: max(((100% - 70rem) / 2), var(--size-fluid-4));
+
+  &--narrow {
+    margin-inline: max(((100% - 60rem) / 2), var(--size-fluid-3));
+  }
 }
 
 .header {
@@ -115,6 +119,10 @@
 }
 .col-12 {
   grid-column: span 12;
+}
+
+.offset-1 {
+  margin-inline-start: 8.33333%;
 }
 
 .section {

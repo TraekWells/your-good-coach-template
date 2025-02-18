@@ -38,3 +38,8 @@ strong:not(.prose) {
 .lead {
   font-size: var(--font-size-medium);
 }
+
+.eyebrow {
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
