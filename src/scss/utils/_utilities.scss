@@ -36,3 +36,15 @@
 .padding-large {
   padding: var(--space-lg);
 }
+
+.d-flex {
+  display: flex;
+}
+
+.gap-medium {
+  gap: var(--space-md);
+}
+
+.rounded-corners {
+  border-radius: var(--border-size-4);
+}

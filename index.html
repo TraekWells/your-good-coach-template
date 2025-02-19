@@ -24,16 +24,16 @@
         />
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a class="navbar__link" href="#">Blog</a>
+            <a class="navbar__link" href="/blog">Blog</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#">Contact Me</a>
+            <a class="navbar__link" href="/contact-me">Contact Me</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#">About</a>
+            <a class="navbar__link" href="/about">About</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link button" href="#"
+            <a class="navbar__link button" href="/shop"
               ><strong>Shop</strong>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -283,7 +283,7 @@
                 <img
                   src="/images/about-me-image.jpg"
                   alt="Chelsea Wells"
-                  class="about-me-image"
+                  class="about-me-image rounded-corners"
                 />
                 <svg
                   width="142"
@@ -354,45 +354,89 @@
           <div class="testimonials">
             <div class="grid">
               <div class="col-4">
-                <div class="testimonial__intro">
-                  <h3 class="header-large">From Uncertain to Unstoppsable</h3>
+                <div class="testimonial__intro flow">
+                  <h3 class="header-lg">From Uncertain to Unstoppsable</h3>
                   <p>Growth starts here</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-circle-arrow-left"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M16 12H8" />
-                    <path d="m12 8-4 4 4 4" />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-circle-arrow-right"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M8 12h8" />
-                    <path d="m12 16 4-4-4-4" />
-                  </svg>
+                  <div class="d-flex gap-medium">
+                    <button class="button--unstyled">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-circle-arrow-left"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M16 12H8" />
+                        <path d="m12 8-4 4 4 4" />
+                      </svg>
+                    </button>
+                    <button class="button--unstyled">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-circle-arrow-right"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M8 12h8" />
+                        <path d="m12 16 4-4-4-4" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="col-4">
-                <div class="testimonal__card"></div>
+                <div class="card testimonials__card flow">
+                  <div class="testimonials__source">
+                    <div class="d-flex gap-medium">
+                      <img src="/images/testimonial-image-one.jpg" alt="" />
+                      <div>
+                        <p><strong>Jane Cooper</strong></p>
+                        <p>Career Coaching</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials__content">
+                    <p>
+                      Before working with Your Good Coach, I felt stuck in a job
+                      that didn’t fulfill me. After just a few sessions, I
+                      gained clarity, built confidence, and landed my dream
+                      role! Highly recommend!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card testimonials__card flow">
+                  <div class="testimonials__source">
+                    <div class="d-flex gap-medium">
+                      <img src="/images/testimonial-image-one.jpg" alt="" />
+                      <div>
+                        <p><strong>Jenny Wilson</strong></p>
+                        <p>Etsy Coaching</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials__content">
+                    <p>
+                      This coaching gave me the confidence to finally take the
+                      leap. Now, I’m in a career I love and feel more empowered
+                      than ever!
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
