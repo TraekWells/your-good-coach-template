@@ -3,4 +3,19 @@
   border-radius: var(--size-2);
   padding-block: var(--space-lg);
   margin-block-start: auto;
+
+  &__bio {
+    display: flex;
+    gap: var(--space-lg);
+
+    img {
+      align-self: flex-start;
+    }
+  }
+
+  &__pages {
+    justify-self: end;
+    display: flex;
+    gap: var(--space-lg);
+  }
 }
