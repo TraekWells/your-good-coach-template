@@ -1,7 +1,5 @@
-@use "./variables";
-@use "./reset";
-@use "./typography";
-@use "./layout";
 @use "./base";
 @use "./components";
-@use "./utilities";
+@use "./layout";
+@use "./pages";
+@use "./utils";

@@ -6,8 +6,10 @@
     <title>Home | Your Good Coach</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/scss/main.scss" />
@@ -160,13 +162,14 @@
       </section>
       <section class="section background-cream round">
         <div class="container--narrow">
+          <h4 class="eyebrow centered-text">Coaching</h4>
           <h2 class="header-lg centered-text margin-bottom-2xl">
             How I help you Succeed
           </h2>
           <div class="grid">
             <div class="col-6">
               <div class="card-group--vertical">
-                <div class="card background-white">
+                <div class="card background-white padding-large">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -199,7 +202,7 @@
                     mindset.
                   </p>
                 </div>
-                <div class="card background-white">
+                <div class="card background-white padding-large">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -231,7 +234,7 @@
                     Discover your inner strength and take action with courage.
                   </p>
                 </div>
-                <div class="card background-white">
+                <div class="card background-white padding-large">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -275,40 +278,42 @@
       <section class="section">
         <div class="container--narrow">
           <div class="grid">
-            <div class="col-5 offset-1">
-              <img
-                src="/images/about-me-image.jpg"
-                alt="Chelsea Wells"
-                class="about-me-image"
-              />
-              <svg
-                width="142"
-                height="68"
-                viewBox="0 0 142 68"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="about-me-image__graphic"
-              >
-                <path
-                  d="M1.5 17.5568L15.3998 2.95801L29.2999 17.5568L43.1999 2.95801L57.0999 17.5568L70.9999 2.95801L84.8999 17.5568L98.7999 2.95801L112.7 17.5568L126.6 2.95801L140.5 17.5568"
-                  stroke="#CDA42A"
-                  stroke-width="4"
+            <div class="col-6">
+              <div class="about-me-image-wrapper">
+                <img
+                  src="/images/about-me-image.jpg"
+                  alt="Chelsea Wells"
+                  class="about-me-image"
                 />
-                <path
-                  d="M1.5 41.257L15.3998 26.6582L29.2999 41.257L43.1999 26.6582L57.0999 41.257L70.9999 26.6582L84.8999 41.257L98.7999 26.6582L112.7 41.257L126.6 26.6582L140.5 41.257"
-                  stroke="#CDA42A"
-                  stroke-width="4"
-                />
-                <path
-                  d="M1.5 64.9579L15.3998 50.3591L29.2999 64.9579L43.1999 50.3591L57.0999 64.9579L70.9999 50.3591L84.8999 64.9579L98.7999 50.3591L112.7 64.9579L126.6 50.3591L140.5 64.9579"
-                  stroke="#CDA42A"
-                  stroke-width="4"
-                />
-              </svg>
+                <svg
+                  width="142"
+                  height="68"
+                  viewBox="0 0 142 68"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="wavy-lines"
+                >
+                  <path
+                    d="M1.5 17.5568L15.3998 2.95801L29.2999 17.5568L43.1999 2.95801L57.0999 17.5568L70.9999 2.95801L84.8999 17.5568L98.7999 2.95801L112.7 17.5568L126.6 2.95801L140.5 17.5568"
+                    stroke="#CDA42A"
+                    stroke-width="4"
+                  />
+                  <path
+                    d="M1.5 41.257L15.3998 26.6582L29.2999 41.257L43.1999 26.6582L57.0999 41.257L70.9999 26.6582L84.8999 41.257L98.7999 26.6582L112.7 41.257L126.6 26.6582L140.5 41.257"
+                    stroke="#CDA42A"
+                    stroke-width="4"
+                  />
+                  <path
+                    d="M1.5 64.9579L15.3998 50.3591L29.2999 64.9579L43.1999 50.3591L57.0999 64.9579L70.9999 50.3591L84.8999 64.9579L98.7999 50.3591L112.7 64.9579L126.6 50.3591L140.5 64.9579"
+                    stroke="#CDA42A"
+                    stroke-width="4"
+                  />
+                </svg>
+              </div>
             </div>
-            <div class="col-5">
-              <h4 class="eyebrow">Who am I?</h4>
-              <h3>Your Good Coach</h3>
+            <div class="col-6 flow">
+              <h4 class="eyebrow">Your Coach</h4>
+              <h3 class="header-lg">Chelsea Wells</h3>
               <p>
                 I know what it’s like to feel stuck, wondering if it’s too late
                 to follow your dreams. But I also know that with the right
@@ -335,6 +340,60 @@
                   <path d="M7 17 17 7" />
                 </svg>
               </a>
+              <img
+                src="/images/signature.jpg"
+                alt="Signature of Chelsea Wells"
+                class="signature"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="testimonials">
+            <div class="grid">
+              <div class="col-4">
+                <div class="testimonial__intro">
+                  <h3 class="header-large">From Uncertain to Unstoppsable</h3>
+                  <p>Growth starts here</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-arrow-left"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M16 12H8" />
+                    <path d="m12 8-4 4 4 4" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-arrow-right"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M8 12h8" />
+                    <path d="m12 16 4-4-4-4" />
+                  </svg>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="testimonal__card"></div>
+              </div>
             </div>
           </div>
         </div>

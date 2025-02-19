@@ -35,11 +35,21 @@ strong:not(.prose) {
   color: var(--color-primary-dark);
 }
 
+a {
+  display: inline-flex;
+}
+
 .lead {
   font-size: var(--font-size-medium);
 }
 
 .eyebrow {
-  text-transform: uppercase;
+  font-family: var(--font-family-cursive);
   color: var(--color-secondary);
+  font-size: var(--font-size-large);
+}
+
+.signature {
+  width: 175px;
+  margin-block: var(--space-xl);
 }

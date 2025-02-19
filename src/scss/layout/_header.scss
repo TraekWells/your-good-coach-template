@@ -1,0 +1,27 @@
+.header {
+  background-color: var(--color-neutral-cream);
+  border-radius: var(--size-4);
+  overflow: hidden;
+  padding-block: var(--space-lg);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &--home {
+    min-height: 35rem;
+    justify-content: center;
+  }
+
+  &__content {
+    max-width: var(--size-content-3);
+    display: grid;
+    gap: var(--size-4);
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: var(--size-15);
+  }
+}

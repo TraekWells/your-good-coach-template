@@ -1,0 +1,9 @@
+.about-me-image-wrapper {
+  position: relative;
+
+  .wavy-lines {
+    position: absolute;
+    top: var(--space-lg);
+    left: -15%;
+  }
+}
