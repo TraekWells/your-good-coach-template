@@ -9,6 +9,11 @@
     width: fit-content;
     padding: var(--space-md) var(--space-lg);
     border-radius: var(--radius-round);
+
+    &:hover {
+      outline: 2px solid var(--color-secondary);
+      outline-offset: 3px;
+    }
   }
 
   &--unstyled {

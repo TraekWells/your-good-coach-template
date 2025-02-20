@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       input: {
@@ -8,5 +8,5 @@ export default defineConfig({
       },
     },
   },
-  base: "/your-good-coach-template",
-});
+  base: mode === "production" ? "/your-good-coach-template/" : "/",
+}));

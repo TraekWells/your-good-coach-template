@@ -31,5 +31,17 @@
     display: flex;
     gap: var(--space-md);
     list-style: none;
+
+    @media (width <= 600px) {
+      display: none;
+    }
+  }
+}
+
+.mobile-menu {
+  display: block;
+
+  @media (width > 600px) {
+    display: none;
   }
 }

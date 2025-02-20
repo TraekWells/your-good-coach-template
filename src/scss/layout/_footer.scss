@@ -18,4 +18,10 @@
     display: flex;
     gap: var(--space-lg);
   }
+
+  &__page-list {
+    &:not(:last-child) {
+      margin-inline-end: var(--space-lg);
+    }
+  }
 }

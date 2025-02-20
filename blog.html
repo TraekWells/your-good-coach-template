@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Your Good Coach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/scss/main.scss" />
+  </head>
+  <body>
+    <header class="header header--home">
+      <nav class="navbar">
+        <a href="/">
+          <img
+            src="/images/logo.png"
+            class="navbar__logo"
+            alt="Your good coach logo"
+          />
+        </a>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="/blog">Blog</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="/contact-me">Contact Me</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="/about">About</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link button" href="/shop"
+              ><strong>Shop</strong>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-up-right navbar__icon"
+              >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button class="button--unstyled mobile-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu"
+          >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </button>
+      </nav>
+      <div class="container">
+        <div class="header__content">
+          <h1 class="header-xl relative-anchor">
+            <span class="demphasized">The Confidence to Start.</span
+            ><span class="emphasized">The Mindset to Grow.</span>
+            <img
+              src="images/fancy-underline.svg"
+              alt=""
+              class="fancy-underline"
+            />
+          </h1>
+          <p class="lead">
+            With the right coaching, your goals aren’t just possible,
+            <strong>they’re inevitable.</strong>
+          </p>
+          <a href="#" class="button button__primary"
+            >Book a free consultation
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-move-right"
+            >
+              <path d="M18 8L22 12L18 16" />
+              <path d="M2 12H22" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <img
+        src="/images/hero-image.png"
+        alt="Hero image"
+        class="header__image"
+      />
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h2>Blog stuff</h2>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container--narrow">
+        <div class="grid margin-bottom-2xl">
+          <div class="footer__bio">
+            <img src="/images/avatar.jpg" alt="Chelsea Wells" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae fuga, modi repellendus perferendis maxime officiis
+              voluptatum eligendi quisquam minus animi deleniti quia dolor
+              repellat vel iste? Quae sapiente natus maxime?
+            </p>
+          </div>
+          <div class="footer__pages">
+            <div class="footer__page-list">
+              <h4><strong>Pages</strong></h4>
+              <ul class="unstyled-list">
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact-me">Contact Me</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/shop">Shop</a></li>
+              </ul>
+            </div>
+            <div class="footer__page-list">
+              <h4><strong>Connect</strong></h4>
+              <ul class="unstyled-list">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">YouTube</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="flex flex-justify-center" style="--gap: 0.5rem">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-copyright"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M14.83 14.83a4 4 0 1 1 0-5.66" />
+          </svg>
+          Copyright 2025
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
