@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    var(--grid-placement, auto-fill),
+    minmax(var(--grid-min-item-size, 16rem), 1fr)
+  );
+  gap: var(--space-lg);
+}
+
+/* A split 50/50 layout */
+.grid[data-layout="50-50"] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(14rem, 50vw, 22rem);
+}
+
+/* Three column grid layout */
+.grid[data-layout="thirds"] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 33%, 20rem);
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, --space-lg);
+
+  &.column {
+    flex-direction: column;
+  }
+}
+
+.repel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: var(--repel-vertical-alignment, center);
+  gap: var(--gutter, var(--space-m));
+}
+
+.repel[data-nowrap] {
+  flex-wrap: nowrap;
+}

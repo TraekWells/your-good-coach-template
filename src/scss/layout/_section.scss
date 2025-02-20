@@ -1,3 +1,8 @@
 .section {
   padding-block: var(--space-2xl);
+
+  &.alternate {
+    background-color: var(--color-neutral-cream);
+    border-radius: var(--border-size-4);
+  }
 }

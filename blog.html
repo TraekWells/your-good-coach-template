@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./src/scss/main.scss" />
   </head>
   <body>
-    <header class="header header--home">
+    <header class="header">
       <nav class="navbar">
         <a href="/">
           <img
@@ -74,57 +74,54 @@
           </svg>
         </button>
       </nav>
-      <div class="container">
+      <div class="wrapper">
         <div class="header__content">
-          <h1 class="header-xl relative-anchor">
-            <span class="demphasized">The Confidence to Start.</span
-            ><span class="emphasized">The Mindset to Grow.</span>
-            <img
-              src="images/fancy-underline.svg"
-              alt=""
-              class="fancy-underline"
-            />
-          </h1>
-          <p class="lead">
-            With the right coaching, your goals aren’t just possible,
-            <strong>they’re inevitable.</strong>
-          </p>
-          <a href="#" class="button button__primary"
-            >Book a free consultation
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-move-right"
-            >
-              <path d="M18 8L22 12L18 16" />
-              <path d="M2 12H22" />
-            </svg>
-          </a>
+          <h1 class="header-2xl">Confidence & Business Growth Tips</h1>
         </div>
       </div>
-      <img
-        src="/images/hero-image.png"
-        alt="Hero image"
-        class="header__image"
-      />
     </header>
     <main>
       <section class="section">
-        <div class="container">
-          <h2>Blog stuff</h2>
+        <div class="wrapper flow">
+          <h2 class="header-xl">Blog</h2>
+          <p class="lead">
+            Inspiration, strategy, and confidence-building tips for your
+            business journey.
+          </p>
+          <div class="repel">
+            <ul class="chips">
+              <li class="chip"><button>All</button></li>
+              <li class="chip"><button>Business</button></li>
+              <li class="chip"><button>Self Confidence</button></li>
+            </ul>
+            <div class="form-group">
+              <label for="blog-sort">Sort By</label>
+              <select name="blog-sort" id="blog-sort">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section alternate">
+        <div class="wrapper flow">
+          <h2 class="header-lg">Featured</h2>
+          <div class="grid" data-layout="50-50">
+            <p>Lorem</p>
+            <p>Lorem</p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrapper">
+          <h2 class="header-lg">Archive</h2>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container--narrow">
-        <div class="grid margin-bottom-2xl">
+      <div class="wrapper--narrow">
+        <div class="grid margin-bottom-2xl" data-layout="50-50">
           <div class="footer__bio">
             <img src="/images/avatar.jpg" alt="Chelsea Wells" />
             <p>

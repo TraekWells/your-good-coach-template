@@ -6,6 +6,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 19rem;
+  justify-content: flex-end;
 
   &--home {
     min-height: 35rem;

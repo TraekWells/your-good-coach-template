@@ -1,12 +1,19 @@
 import { defineConfig } from "vite";
 
-export default defineConfig(({ mode }) => ({
-  build: {
-    rollupOptions: {
-      input: {
-        main: "index.html",
+export default defineConfig(({ mode }) => {
+  return {
+    build: {
+      rollupOptions: {
+        input: {
+          main: "index.html",
+        },
       },
     },
-  },
-  base: mode === "production" ? "/your-good-coach-template/" : "/",
-}));
+    server: {
+      watch: {
+        usePolling: true,
+      },
+    },
+    base: mode === "production" ? "/your-good-coach-template/" : "/",
+  };
+});
