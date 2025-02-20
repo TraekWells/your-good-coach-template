@@ -10,7 +10,8 @@
     padding: var(--space-md) var(--space-lg);
     border-radius: var(--radius-round);
 
-    &:hover {
+    &:hover,
+    &:focus {
       outline: 2px solid var(--color-secondary);
       outline-offset: 3px;
     }
