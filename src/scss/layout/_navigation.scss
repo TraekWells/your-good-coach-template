@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../base/mixins" as *;
+
 .navbar {
   padding-inline: var(--size-4);
   display: flex;
@@ -28,12 +31,12 @@
   }
 
   &__menu {
-    display: flex;
-    gap: var(--space-md);
+    gap: var(--space-xl);
     list-style: none;
+    display: none;
 
-    @media (width <= 600px) {
-      display: none;
+    @include media("md") {
+      display: flex;
     }
   }
 }
@@ -41,7 +44,7 @@
 .mobile-menu {
   display: block;
 
-  @media (width > 600px) {
+  @include media("md") {
     display: none;
   }
 }

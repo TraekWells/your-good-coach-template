@@ -1,5 +1,8 @@
+@use "sass:map";
+@use "../base/mixins" as *;
+
 .header {
-  background-color: var(--color-neutral-cream);
+  background-color: var(--color-primary-lightest);
   border-radius: var(--size-4);
   overflow: hidden;
   padding-block: var(--space-lg);
@@ -8,6 +11,7 @@
   flex-direction: column;
   min-height: 19rem;
   justify-content: flex-end;
+  isolation: isolate;
 
   &--home {
     min-height: 35rem;
@@ -22,8 +26,19 @@
 
   &__image {
     position: absolute;
-    right: 0;
     bottom: 0;
     height: var(--size-15);
+
+    display: none;
+
+    @include media("lg") {
+      display: block;
+    }
+  }
+
+  &__wordmark {
+    position: absolute;
+    bottom: -2%;
+    z-index: -1;
   }
 }

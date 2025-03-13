@@ -1,0 +1,10 @@
+@use "sass:map";
+
+// Refine these later
+
+$breakpoints: (
+  "sm": 576px,
+  "md": 750px,
+  "lg": 992px,
+  "xl": 1200px,
+);
