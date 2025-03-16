@@ -16,12 +16,28 @@
   &--home {
     min-height: 35rem;
     justify-content: center;
+
+    h1 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 span {
+      background-color: var(--color-neutral-white);
+      align-self: flex-start;
+      padding-inline: var(--space-sm);
+    }
   }
 
   &__content {
     max-width: var(--size-content-3);
     display: grid;
     gap: var(--size-4);
+
+    @include media("lg") {
+      position: relative;
+      left: 23rem;
+    }
   }
 
   &__image {

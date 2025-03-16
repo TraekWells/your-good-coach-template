@@ -15,6 +15,10 @@ h6 {
   color: var(--color-ink);
 }
 
+p {
+  max-width: var(--size-content-3);
+}
+
 a {
   color: var(--color-link);
 }
@@ -66,4 +70,32 @@ a {
 .signature {
   width: 175px;
   margin-block: var(--space-xl);
+}
+.has-dashes {
+  --element-width: 3rem;
+  --element-height: 3px;
+  --element-offset: 4rem;
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(var(--element-offset) * -1);
+    background-color: var(--color-secondary);
+    height: var(--element-height);
+    width: var(--element-width);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: calc(var(--element-offset) * -1);
+    background-color: var(--color-secondary);
+    height: var(--element-height);
+    width: var(--element-width);
+  }
 }

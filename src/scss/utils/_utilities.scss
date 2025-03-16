@@ -68,6 +68,12 @@
 }
 
 // Flex classes
+.flex-centered-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .flex-justify-center {
   justify-content: center;
 }
