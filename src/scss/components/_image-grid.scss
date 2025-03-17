@@ -1,0 +1,7 @@
+.image-grid {
+  --flow-space: var(--space-lg);
+  display: grid;
+  gap: var(--space-md);
+
+  grid-template-columns: repeat(4, 1fr);
+}

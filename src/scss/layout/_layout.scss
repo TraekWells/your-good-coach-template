@@ -19,6 +19,12 @@
   --grid-min-item-size: clamp(16rem, 33%, 20rem);
 }
 
+/* Four column grid layout */
+.grid[data-layout="fourths"] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 25%, 20rem);
+}
+
 .flex {
   display: flex;
   gap: var(--gap, --space-lg);
@@ -26,6 +32,11 @@
   &.column {
     flex-direction: column;
   }
+}
+
+.even-columns {
+  display: flex;
+  gap: var(--space-2xl);
 }
 
 .repel {

@@ -1,7 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: var(--space-md);
   border-radius: var(--border-size-4);
   flex: 1;
 
@@ -13,11 +13,17 @@
   &__title {
     color: var(--color-primary-dark);
   }
-}
 
-.card-group--vertical {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-  height: 100%;
+  &__icon-wrapper {
+    border-radius: 50%;
+    background-color: var(--color-neutral-white);
+    height: 2.5rem;
+    width: 2.5rem;
+    display: grid;
+    place-items: center;
+  }
+
+  &__icon {
+    stroke: var(--color-primary-dark);
+  }
 }

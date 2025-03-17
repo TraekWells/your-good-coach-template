@@ -1,7 +1,7 @@
 .wrapper {
   margin-inline: max(((100% - 70rem) / 2), var(--size-fluid-4));
 
-  &--narrow {
-    margin-inline: max(((100% - 60rem) / 2), var(--size-fluid-3));
+  &[data-wrapper="narrow"] {
+    margin-inline: max(((100% - 55rem) / 2), var(--size-fluid-3));
   }
 }
