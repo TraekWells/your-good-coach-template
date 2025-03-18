@@ -1,3 +1,5 @@
+@use "../base/mixins" as *;
+
 .grid {
   display: grid;
   grid-template-columns: repeat(
@@ -16,7 +18,7 @@
 /* Three column grid layout */
 .grid[data-layout="thirds"] {
   --grid-placement: auto-fit;
-  --grid-min-item-size: clamp(16rem, 33%, 20rem);
+  --grid-min-item-size: clamp(18rem, 33%, 20rem);
 }
 
 /* Four column grid layout */
@@ -36,7 +38,12 @@
 
 .even-columns {
   display: flex;
+  flex-direction: column;
   gap: var(--space-2xl);
+
+  @include media("md") {
+    flex-direction: row;
+  }
 }
 
 .repel {

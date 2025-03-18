@@ -1,3 +1,5 @@
+@use "../base/mixins" as *;
+
 body {
   font-family: var(--font-family-sans);
   font-optical-sizing: auto;
@@ -81,21 +83,20 @@ a {
   display: flex;
   align-items: center;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    left: calc(var(--element-offset) * -1);
     background-color: var(--color-secondary);
     height: var(--element-height);
     width: var(--element-width);
   }
 
+  &::before {
+    left: calc(var(--element-offset) * -1);
+  }
+
   &::after {
-    content: "";
-    position: absolute;
     right: calc(var(--element-offset) * -1);
-    background-color: var(--color-secondary);
-    height: var(--element-height);
-    width: var(--element-width);
   }
 }

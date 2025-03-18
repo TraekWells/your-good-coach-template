@@ -10,3 +10,13 @@
     @warn "Breakpoint #{$size} not found in $breakpoints map.";
   }
 }
+
+@mixin hide-on($size) {
+  @if map.has-key($breakpoints, $size) {
+    @media (max-width: map.get($breakpoints, $size)) {
+      display: none;
+    }
+  } @else {
+    @warn "Breakpoint #{$size} not found in $breakpoints map.";
+  }
+}

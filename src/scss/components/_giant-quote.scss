@@ -11,8 +11,8 @@
 
   &::before {
     content: open-quote;
-    position: absolute;
-    top: -6rem;
+    position: relative;
+    top: 4rem;
     color: var(--color-primary);
     font-size: 7rem;
   }

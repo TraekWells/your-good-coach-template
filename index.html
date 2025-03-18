@@ -147,7 +147,7 @@
         </div>
       </section>
       <section class="section rounded-corners" data-background="cream">
-        <div class="wrapper" data-wrapper="narrow">
+        <div class="wrapper flow" data-wrapper="narrow">
           <h4 class="eyebrow centered-text">Coaching</h4>
           <h2 class="has-dashes">Coaching Designed For You.</h2>
 
@@ -211,14 +211,14 @@
               <img
                 src="/images/undraw-yoga.svg"
                 alt="Meditating"
-                class="rounded-corners"
+                class="hide-on-md"
               />
             </div>
             <div class="even-columns">
               <img
                 src="/images/undraw-business.svg"
-                alt="Meditating"
-                class="Woman planning her business"
+                alt="Woman planning her business"
+                class="hide-on-md"
               />
               <div class="card">
                 <div class="card__icon-wrapper">
@@ -335,24 +335,21 @@
               <img
                 src="/images/undraw-confidence.svg"
                 alt="Confident woman speaking"
-                class="rounded-corners"
+                class="hide-on-md"
               />
             </div>
           </div>
         </div>
       </section>
       <section class="section rounded-corners" data-background="green">
-        <div class="wrapper--narrow">
+        <div class="wrapper" data-wrapper="narrow">
           <div class="grid" data-layout="50-50">
-            <div class="about-me-image-wrapper">
-              <img
-                src="/images/about-me-image.jpg"
-                alt="Chelsea Wells"
-                class="about-me-image rounded-corners"
-              />
-            </div>
-            <div class="flow">
-              <h4 class="eyebrow">Your Coach</h4>
+            <img
+              src="/images/about-me-image.jpg"
+              alt="Chelsea Wells"
+              class="about-me-image rounded-corners"
+            />
+            <div class="flow" style="--flow-space: 1.5rem">
               <h3 class="header-lg">Chelsea Wells</h3>
               <p>
                 I know what it’s like to feel stuck, wondering if it’s too late
@@ -362,8 +359,8 @@
                 confidence and clarity needed to build the business of their
                 dreams.
               </p>
-              <a href="#"
-                >Learn more about my story
+              <a href="#" class="button button__primary"
+                >Get started today
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -374,12 +371,64 @@
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="lucide lucide-arrow-up-right navbar__icon"
+                  class="lucide lucide-move-right"
                 >
-                  <path d="M7 7h10v10" />
-                  <path d="M7 17 17 7" />
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
                 </svg>
               </a>
+              <p><strong>Connect with me</strong></p>
+              <div class="flex gap-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-instagram"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-youtube"
+                >
+                  <path
+                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                  />
+                  <path d="m10 15 5-3-5-3z" />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-facebook"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -472,25 +521,88 @@
         </div>
       </section>
       <section class="section">
-        <div class="wrapper--narrow">
-          <div class="grid" data-layout="50-50">
-            <div class="flow">
-              <h3 class="header-lg">Is this you?</h3>
-              <p>
-                You’ve always dreamed of starting your own business, but
-                something keeps holding you back. Maybe it’s self-doubt, fear of
-                failure, or simply not knowing where to start. If you’re a woman
-                ready to break through those barriers and step into your
-                potential, you’re in the right place.
-              </p>
+        <div class="wrapper" data-wrapper="narrow">
+          <h2>Recent Posts</h2>
+          <div class="posts">
+            <div class="grid" data-layout="50-50">
+              <div class="post">
+                <img
+                  src="/images/post-image.jpg"
+                  alt="Post image"
+                  class="post__image"
+                />
+                <div class="post__content flow">
+                  <a href="#" class="post__category">Category</a>
+                  <h3 class="post__title">
+                    Break free from self-doubt and step into your power with
+                    confidence.
+                  </h3>
+                  <p class="post__preview">
+                    Age is just a number—your dreams are still waiting for you.
+                  </p>
+                  <a href="#"
+                    >Read post
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="post">
+                <img
+                  src="/images/post-image.jpg"
+                  alt="Post image"
+                  class="post__image"
+                />
+                <div class="post__content flow">
+                  <a href="#" class="post__category">Category</a>
+                  <h3 class="post__title">
+                    Overcoming Imposter Syndrome: How to Trust Yourself & Take
+                    Action
+                  </h3>
+                  <p class="post__preview">
+                    Break free from self-doubt and step into your power with
+                    confidence.
+                  </p>
+                  <a href="#"
+                    >Read post
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-up-right"
+                    >
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
-            <img src="images/stressed.jpg" alt="" class="rounded-corners" />
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="wrapper--narrow">
+      <div class="wrapper">
         <div class="grid margin-bottom-2xl" data-layout="50-50">
           <div class="footer__bio">
             <img src="/images/avatar.jpg" alt="Chelsea Wells" />

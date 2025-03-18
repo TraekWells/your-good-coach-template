@@ -1,0 +1,17 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+
+  &__image {
+    border-radius: var(--border-radius-md);
+  }
+
+  &__category {
+    width: fit-content;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-size-5);
+    background-color: var(--color-neutral-cream);
+    text-decoration: none;
+  }
+}
