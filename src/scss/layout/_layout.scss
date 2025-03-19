@@ -57,3 +57,28 @@
 .repel[data-nowrap] {
   flex-wrap: nowrap;
 }
+
+.prose-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+
+  @include media("lg") {
+    gap: var(--space-2xl);
+    flex-direction: row-reverse;
+  }
+
+  .content {
+    flex: 1 1 auto;
+    p {
+      max-width: unset;
+    }
+  }
+
+  .sidebar {
+    flex: 0 0 auto;
+    @include media("lg") {
+      flex: 0 0 18rem;
+    }
+  }
+}

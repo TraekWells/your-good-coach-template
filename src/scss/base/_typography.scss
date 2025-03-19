@@ -60,8 +60,9 @@ strong:not(.prose) {
   color: var(--color-primary-dark);
 }
 
-a {
+a:not(button):not(nav a) {
   display: inline-flex;
+  text-decoration: none;
 }
 
 .lead {
@@ -87,6 +88,7 @@ a {
   margin-inline: auto;
   display: flex;
   align-items: center;
+  text-align: center;
 
   &::before,
   &::after {
@@ -103,5 +105,21 @@ a {
 
   &::after {
     right: calc(var(--element-offset) * -1);
+  }
+}
+
+.link-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+
+  &:hover {
+    svg {
+      transform: translateX(0.5rem);
+    }
+  }
+
+  svg {
+    transition: var(--transition-fast);
   }
 }

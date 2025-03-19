@@ -12,6 +12,10 @@
     width: 100%;
   }
 
+  &__title {
+    font-size: var(--font-size-medium);
+  }
+
   &[data-layout="vertical"] {
     flex-direction: column;
   }
