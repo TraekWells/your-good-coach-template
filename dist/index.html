@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Your Good Coach</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/your-good-coach-template/assets/apple-touch-icon-Bid23_c5.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/your-good-coach-template/assets/favicon-32x32-BM3IsqEF.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/your-good-coach-template/assets/favicon-16x16-CVJ-j0Yp.png" />
+    <link rel="manifest" href="/your-good-coach-template/assets/site-BwHFeIBa.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,25 +16,30 @@
       href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="/your-good-coach-template/assets/main-DNiBq-w0.css">
+    <link rel="stylesheet" crossorigin href="/your-good-coach-template/assets/main-UcqqnrnX.css">
   </head>
   <body>
     <header class="header header--home">
       <nav class="navbar">
-        <img
-          src="/your-good-coach-template/images/logo.png"
-          class="navbar__logo"
-          alt="Your good coach logo"
-        />
+        <a href="/">
+          <img
+            src="/your-good-coach-template/images/logo.png"
+            class="navbar__logo"
+            alt="Your good coach logo"
+          />
+        </a>
         <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="/blog">My Story</a>
+          </li>
           <li class="navbar__item">
             <a class="navbar__link" href="/blog">Blog</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="/contact-me">Contact Me</a>
+            <a class="navbar__link" href="/services">Services</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="/about">About</a>
+            <a class="navbar__link" href="/contact-me">Get In Touch</a>
           </li>
           <li class="navbar__item">
             <a class="navbar__link button" href="/shop"
@@ -73,22 +82,20 @@
         </button>
       </nav>
       <div class="wrapper">
+        <img
+          src="/your-good-coach-template/images/hero-image.png"
+          alt="Hero image"
+          class="header__image"
+        />
         <div class="header__content">
-          <h1 class="header-2xl relative-anchor">
-            <span class="demphasized">The Confidence to Start.</span
-            ><span class="emphasized">The Mindset to Grow.</span>
-            <img
-              src="images/fancy-underline.svg"
-              alt=""
-              class="fancy-underline"
-            />
+          <h1 class="header-2xl">
+            <span>Your Business.</span>
+            <span>Your Confidence.</span>
+            <span>Your Time.</span>
           </h1>
-          <p class="lead">
-            With the right coaching, your goals aren’t just possible,
-            <strong>they’re inevitable.</strong>
-          </p>
+          <p class="lead">Helping women and moms build their dream business.</p>
           <a href="#" class="button button__primary"
-            >Book a free consultation
+            >Get started today
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -107,222 +114,248 @@
           </a>
         </div>
       </div>
-      <img
-        src="/your-good-coach-template/images/hero-image.png"
-        alt="Hero image"
-        class="header__image"
-      />
+      <img class="header__wordmark" src="/your-good-coach-template/images/confidence-wordmark.svg" />
     </header>
     <main>
-      <section class="section">
-        <div class="wrapper">
-          <div class="grid margin-bottom-2xl" data-layout="50-50">
-            <h2 class="header-lg">
-              <span class="demphasized">The Confidence Gap is Real</span>
-              <span class="emphasized">But It’s Not Permanent. </span>
-            </h2>
-            <p class="lead">
-              As Your Good Coach, I’ll help shift your mindset and build
-              confidence.
-            </p>
-          </div>
-          <div class="grid" data-layout="thirds">
-            <div class="card">
-              <img
-                src="/your-good-coach-template/images/card-1.jpg"
-                class="card__image"
-                alt="Woman sitting on the beach"
-              />
-              <div class="card__content">
-                <h3 class="card__title">The Fear Factor</h3>
-                <p>
-                  Fear feels real, but it doesn’t have to define you. Every
-                  successful journey starts with uncertainty.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src="/your-good-coach-template/images/card-2.jpg"
-                class="card__image"
-                alt="Woman sitting on the beach"
-              />
-              <div class="card__content">
-                <h3 class="card__title">From Doubt to Action</h3>
-                <p>
-                  The best way to build confidence? Start. Small steps lead to
-                  big breakthroughs.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src="/your-good-coach-template/images/card-3.jpg"
-                class="card__image"
-                alt="Woman sitting on the beach"
-              />
-              <div class="card__content">
-                <h3 class="card__title">Confidence is Built, Not Born</h3>
-                <p>
-                  Confidence isn’t a gift—it’s a skill. The more you take
-                  action, the stronger it grows.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section background-cream round">
-        <div class="wrapper--narrow">
-          <h4 class="eyebrow centered-text">Coaching</h4>
-          <h2 class="header-lg centered-text margin-bottom-2xl">
-            How I help you Succeed
+      <section
+        class="section rounded-corners centered-text"
+        data-background="cream"
+      >
+        <div class="wrapper flow flex-centered-columns">
+          <h4 class="eyebrow centered-text">Mindset Matters</h4>
+          <h2 class="header-lg has-dashes">
+            Build a business and believe in yourself.
           </h2>
-          <div class="grid" data-layout="50-50">
-            <div class="card-group--vertical">
-              <div class="card background-white padding-large">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-brain"
-                >
-                  <path
-                    d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
-                  />
-                  <path
-                    d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
-                  />
-                  <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
-                  <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
-                  <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
-                  <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
-                  <path d="M19.938 10.5a4 4 0 0 1 .585.396" />
-                  <path d="M6 18a4 4 0 0 1-1.967-.516" />
-                  <path d="M19.967 17.484A4 4 0 0 1 18 18" />
-                </svg>
-                <h3>Mindset Transformation</h3>
-                <p>
-                  Learn how to silence self-doubt and develop a success-driven
-                  mindset.
-                </p>
-              </div>
-              <div class="card background-white padding-large">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-brain"
-                >
-                  <path
-                    d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
-                  />
-                  <path
-                    d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
-                  />
-                  <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
-                  <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
-                  <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
-                  <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
-                  <path d="M19.938 10.5a4 4 0 0 1 .585.396" />
-                  <path d="M6 18a4 4 0 0 1-1.967-.516" />
-                  <path d="M19.967 17.484A4 4 0 0 1 18 18" />
-                </svg>
-                <h3>Confidence Building</h3>
-                <p>
-                  Discover your inner strength and take action with courage.
-                </p>
-              </div>
-              <div class="card background-white padding-large">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-brain"
-                >
-                  <path
-                    d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
-                  />
-                  <path
-                    d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
-                  />
-                  <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
-                  <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
-                  <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
-                  <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
-                  <path d="M19.938 10.5a4 4 0 0 1 .585.396" />
-                  <path d="M6 18a4 4 0 0 1-1.967-.516" />
-                  <path d="M19.967 17.484A4 4 0 0 1 18 18" />
-                </svg>
-                <h3>Business Strategy</h3>
-                <p>
-                  Get clear, step-by-step guidance on launching and growing your
-                  business.
-                </p>
-              </div>
-            </div>
-            <img
-              src="/your-good-coach-template/images/how-i-help-you-succeed.jpg"
-              alt="Meditating"
-              class="rounded-corners"
-            />
+          <p>
+            Dreams exist, but self-doubt hinders you. Your Good Coach builds
+            confidence and inspires action. We’ll help turn your vision into
+            reality.
+          </p>
+          <div class="image-grid" data-layout="fourths">
+            <img src="/your-good-coach-template/images/mindset-matters-image-1.jpg" alt="" />
+            <img src="/your-good-coach-template/images/mindset-matters-image-2.jpg" alt="" />
+            <img src="/your-good-coach-template/images/mindset-matters-image-3.jpg" alt="" />
+            <img src="/your-good-coach-template/images/mindset-matters-image-4.jpg" alt="" />
           </div>
         </div>
       </section>
       <section class="section">
-        <div class="wrapper--narrow">
-          <div class="grid" data-layout="50-50">
-            <div class="about-me-image-wrapper">
+        <div class="wrapper centered-text" data-wrapper="narrow">
+          <div class="giant-quote">
+            <blockquote>
+              All our dreams can come true, if we have the courage to pursue
+              them.
+            </blockquote>
+            <p><cite>– Walt Disney</cite></p>
+          </div>
+        </div>
+      </section>
+      <section class="section rounded-corners" data-background="cream">
+        <div class="wrapper flow" data-wrapper="narrow">
+          <h4 class="eyebrow centered-text">Coaching</h4>
+          <h2 class="header-lg has-dashes">Coaching Designed For You.</h2>
+
+          <div class="flow" style="--flow-space: var(--space-2xl)">
+            <div class="even-columns">
+              <div class="card">
+                <div class="card__icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="card__icon lucide lucide-brain"
+                  >
+                    <path
+                      d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
+                    />
+                    <path
+                      d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
+                    />
+                    <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
+                    <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
+                    <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
+                    <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
+                    <path d="M19.938 10.5a4 4 0 0 1 .585.396" />
+                    <path d="M6 18a4 4 0 0 1-1.967-.516" />
+                    <path d="M19.967 17.484A4 4 0 0 1 18 18" />
+                  </svg>
+                </div>
+                <h3 class="header-md header-md card__title">
+                  Mindset Transformation
+                </h3>
+                <p>
+                  Break free from self-doubt and limiting beliefs. We help you
+                  shift your mindset, overcome fear, and step into the
+                  confidence you need to build the business you’ve been dreaming
+                  of.
+                </p>
+                <a href="#" class="button button__primary"
+                  >Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-move-right"
+                  >
+                    <path d="M18 8L22 12L18 16" />
+                    <path d="M2 12H22" />
+                  </svg>
+                </a>
+              </div>
               <img
-                src="/your-good-coach-template/images/about-me-image.jpg"
-                alt="Chelsea Wells"
-                class="about-me-image rounded-corners"
+                src="/your-good-coach-template/images/undraw-yoga.svg"
+                alt="Meditating"
+                class="hide-on-md"
               />
-              <svg
-                width="142"
-                height="68"
-                viewBox="0 0 142 68"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="wavy-lines"
-              >
-                <path
-                  d="M1.5 17.5568L15.3998 2.95801L29.2999 17.5568L43.1999 2.95801L57.0999 17.5568L70.9999 2.95801L84.8999 17.5568L98.7999 2.95801L112.7 17.5568L126.6 2.95801L140.5 17.5568"
-                  stroke="#CDA42A"
-                  stroke-width="4"
-                />
-                <path
-                  d="M1.5 41.257L15.3998 26.6582L29.2999 41.257L43.1999 26.6582L57.0999 41.257L70.9999 26.6582L84.8999 41.257L98.7999 26.6582L112.7 41.257L126.6 26.6582L140.5 41.257"
-                  stroke="#CDA42A"
-                  stroke-width="4"
-                />
-                <path
-                  d="M1.5 64.9579L15.3998 50.3591L29.2999 64.9579L43.1999 50.3591L57.0999 64.9579L70.9999 50.3591L84.8999 64.9579L98.7999 50.3591L112.7 64.9579L126.6 50.3591L140.5 64.9579"
-                  stroke="#CDA42A"
-                  stroke-width="4"
-                />
-              </svg>
             </div>
-            <div class="flow">
-              <h4 class="eyebrow">Your Coach</h4>
+            <div class="even-columns">
+              <img
+                src="/your-good-coach-template/images/undraw-business.svg"
+                alt="Woman planning her business"
+                class="hide-on-md"
+              />
+              <div class="card">
+                <div class="card__icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="card__icon lucide lucide-brain"
+                  >
+                    <path
+                      d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
+                    />
+                    <path
+                      d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
+                    />
+                    <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
+                    <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
+                    <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
+                    <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
+                    <path d="M19.938 10.5a4 4 0 0 1 .585.396" />
+                    <path d="M6 18a4 4 0 0 1-1.967-.516" />
+                    <path d="M19.967 17.484A4 4 0 0 1 18 18" />
+                  </svg>
+                </div>
+                <h3 class="header-md card__title">Business Strategy</h3>
+                <p>
+                  Having a great idea is just the beginning. We’ll help you
+                  create a clear, actionable plan to turn your vision into
+                  reality—covering branding, marketing, and the foundational
+                  steps to get started.
+                </p>
+                <a href="#" class="button button__primary"
+                  >Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-move-right"
+                  >
+                    <path d="M18 8L22 12L18 16" />
+                    <path d="M2 12H22" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="even-columns">
+              <div class="card">
+                <div class="card__icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="card__icon lucide lucide-brain"
+                  >
+                    <path
+                      d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
+                    />
+                    <path
+                      d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
+                    />
+                    <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
+                    <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
+                    <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
+                    <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
+                    <path d="M19.938 10.5a4 4 0 0 1 .585.396" />
+                    <path d="M6 18a4 4 0 0 1-1.967-.516" />
+                    <path d="M19.967 17.484A4 4 0 0 1 18 18" />
+                  </svg>
+                </div>
+                <h3 class="header-md card__title">Confidence Building</h3>
+                <p>
+                  Success starts with self-belief. Through guided coaching,
+                  accountability, and practical exercises, we’ll help you
+                  develop the confidence to show up, take action, and own your
+                  journey as an entrepreneur.
+                </p>
+                <a href="#" class="button button__primary"
+                  >Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-move-right"
+                  >
+                    <path d="M18 8L22 12L18 16" />
+                    <path d="M2 12H22" />
+                  </svg>
+                </a>
+              </div>
+              <img
+                src="/your-good-coach-template/images/undraw-confidence.svg"
+                alt="Confident woman speaking"
+                class="hide-on-md"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section rounded-corners" data-background="green">
+        <div class="wrapper" data-wrapper="narrow">
+          <div class="grid gap-2xlarge" data-layout="50-50">
+            <img
+              src="/your-good-coach-template/images/about-me-image.jpg"
+              alt="Chelsea Wells"
+              class="about-me-image rounded-corners"
+            />
+            <div class="flow" style="--flow-space: 1.5rem">
               <h3 class="header-lg">Chelsea Wells</h3>
               <p>
                 I know what it’s like to feel stuck, wondering if it’s too late
@@ -332,8 +365,8 @@
                 confidence and clarity needed to build the business of their
                 dreams.
               </p>
-              <a href="#"
-                >Learn more about my story
+              <a href="#" class="button button__primary"
+                >Get started today
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -344,17 +377,64 @@
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="lucide lucide-arrow-up-right navbar__icon"
+                  class="lucide lucide-move-right"
                 >
-                  <path d="M7 7h10v10" />
-                  <path d="M7 17 17 7" />
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
                 </svg>
               </a>
-              <img
-                src="/your-good-coach-template/images/signature.jpg"
-                alt="Signature of Chelsea Wells"
-                class="signature"
-              />
+              <p><strong>Connect with me</strong></p>
+              <div class="flex gap-large">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-instagram"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-youtube"
+                >
+                  <path
+                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                  />
+                  <path d="m10 15 5-3-5-3z" />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-facebook"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -447,25 +527,88 @@
         </div>
       </section>
       <section class="section">
-        <div class="wrapper--narrow">
-          <div class="grid" data-layout="50-50">
-            <div class="flow">
-              <h3 class="header-lg">Is this you?</h3>
-              <p>
-                You’ve always dreamed of starting your own business, but
-                something keeps holding you back. Maybe it’s self-doubt, fear of
-                failure, or simply not knowing where to start. If you’re a woman
-                ready to break through those barriers and step into your
-                potential, you’re in the right place.
-              </p>
+        <div class="wrapper flow" data-wrapper="narrow">
+          <h2 class="header-lg">Recent Posts</h2>
+          <div class="posts">
+            <div class="grid" data-layout="50-50">
+              <div class="post" data-layout="vertical">
+                <img
+                  src="/your-good-coach-template/images/post-image.jpg"
+                  alt="Post image"
+                  class="post__image"
+                />
+                <div class="post__content flow">
+                  <a href="#" class="post__category">Category</a>
+                  <h3 class="post__title">
+                    Break free from self-doubt and step into your power with
+                    confidence.
+                  </h3>
+                  <p class="post__preview">
+                    Age is just a number—your dreams are still waiting for you.
+                  </p>
+                  <a href="#" class="link-with-icon"
+                    >Read post
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-move-right"
+                    >
+                      <path d="M18 8L22 12L18 16" />
+                      <path d="M2 12H22" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="post" data-layout="vertical">
+                <img
+                  src="/your-good-coach-template/images/post-image.jpg"
+                  alt="Post image"
+                  class="post__image"
+                />
+                <div class="post__content flow">
+                  <a href="#" class="post__category">Category</a>
+                  <h3 class="post__title">
+                    Overcoming Imposter Syndrome: How to Trust Yourself & Take
+                    Action
+                  </h3>
+                  <p class="post__preview">
+                    Break free from self-doubt and step into your power with
+                    confidence.
+                  </p>
+                  <a href="#" class="link-with-icon"
+                    >Read post
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-move-right"
+                    >
+                      <path d="M18 8L22 12L18 16" />
+                      <path d="M2 12H22" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
-            <img src="images/stressed.jpg" alt="" class="rounded-corners" />
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="wrapper--narrow">
+      <div class="wrapper">
         <div class="grid margin-bottom-2xl" data-layout="50-50">
           <div class="footer__bio">
             <img src="/your-good-coach-template/images/avatar.jpg" alt="Chelsea Wells" />

@@ -6,6 +6,8 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         input: {
           main: "index.html",
+          blog: "blog.html",
+          blogPost: "blog-post.html",
         },
       },
     },
