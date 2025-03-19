@@ -9,7 +9,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 19rem;
+  min-height: 21rem;
   justify-content: flex-end;
   isolation: isolate;
 
@@ -27,17 +27,23 @@
       align-self: flex-start;
       padding-inline: var(--space-sm);
     }
+
+    .header__content {
+      max-width: var(--size-content-3);
+      display: grid;
+      gap: var(--size-4);
+
+      @include media("lg") {
+        position: relative;
+        left: 23rem;
+      }
+    }
   }
 
   &__content {
     max-width: var(--size-content-3);
     display: grid;
     gap: var(--size-4);
-
-    @include media("lg") {
-      position: relative;
-      left: 23rem;
-    }
   }
 
   &__image {

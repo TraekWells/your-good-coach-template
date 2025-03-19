@@ -4,3 +4,27 @@
   display: flex;
   gap: var(--space-md);
 }
+
+.chip {
+  background-color: var(--color-neutral-cream);
+  border-radius: var(--border-radius-xl);
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  min-width: 5rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+
+  &:hover {
+    background-color: var(--color-secondary-dark);
+    color: var(--color-neutral-white);
+  }
+
+  &.active {
+    background-color: var(--color-secondary);
+    color: var(--color-neutral-white);
+
+    &:hover {
+      background-color: var(--color-secondary-dark);
+    }
+  }
+}

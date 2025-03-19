@@ -1,17 +1,34 @@
+.posts {
+  display: grid;
+  gap: var(--space-lg);
+}
+
 .post {
   display: flex;
-  flex-direction: column;
   gap: var(--space-lg);
 
   &__image {
     border-radius: var(--border-radius-md);
+    width: 100%;
+  }
+
+  &[data-layout="vertical"] {
+    flex-direction: column;
+  }
+
+  &[data-layout="horizontal"] {
+    > * {
+      flex-grow: 1;
+      flex-basis: 50%;
+    }
   }
 
   &__category {
     width: fit-content;
     padding: var(--space-sm) var(--space-md);
     border-radius: var(--border-size-5);
-    background-color: var(--color-neutral-cream);
+    background-color: var(--color-base-lighter);
     text-decoration: none;
+    font-size: var(--font-size-sm);
   }
 }

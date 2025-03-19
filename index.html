@@ -21,11 +21,13 @@
   <body>
     <header class="header header--home">
       <nav class="navbar">
-        <img
-          src="/images/logo.png"
-          class="navbar__logo"
-          alt="Your good coach logo"
-        />
+        <a href="/">
+          <img
+            src="/images/logo.png"
+            class="navbar__logo"
+            alt="Your good coach logo"
+          />
+        </a>
         <ul class="navbar__menu">
           <li class="navbar__item">
             <a class="navbar__link" href="/blog">My Story</a>
@@ -529,7 +531,7 @@
           <h2 class="header-lg">Recent Posts</h2>
           <div class="posts">
             <div class="grid" data-layout="50-50">
-              <div class="post">
+              <div class="post" data-layout="vertical">
                 <img
                   src="/images/post-image.jpg"
                   alt="Post image"
@@ -564,7 +566,7 @@
                   </a>
                 </div>
               </div>
-              <div class="post">
+              <div class="post" data-layout="vertical">
                 <img
                   src="/images/post-image.jpg"
                   alt="Post image"

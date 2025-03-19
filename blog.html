@@ -26,13 +26,16 @@
         </a>
         <ul class="navbar__menu">
           <li class="navbar__item">
+            <a class="navbar__link" href="/blog">My Story</a>
+          </li>
+          <li class="navbar__item">
             <a class="navbar__link" href="/blog">Blog</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="/contact-me">Contact Me</a>
+            <a class="navbar__link" href="/services">Services</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="/about">About</a>
+            <a class="navbar__link" href="/contact-me">Get In Touch</a>
           </li>
           <li class="navbar__item">
             <a class="navbar__link button" href="/shop"
@@ -90,9 +93,15 @@
           </p>
           <div class="repel">
             <ul class="chips">
-              <li class="chip"><button>All</button></li>
-              <li class="chip"><button>Business</button></li>
-              <li class="chip"><button>Self Confidence</button></li>
+              <li>
+                <button class="chip active">All</button>
+              </li>
+              <li>
+                <button class="chip">Business</button>
+              </li>
+              <li>
+                <button class="chip">Self Confidence</button>
+              </li>
             </ul>
             <div class="form-group">
               <label for="blog-sort">Sort By</label>
@@ -104,11 +113,11 @@
           </div>
         </div>
       </section>
-      <section class="section alternate">
+      <section class="section rounded-corners" data-background="cream">
         <div class="wrapper flow">
           <h2 class="header-lg">Featured</h2>
           <div class="grid" data-layout="50-50">
-            <div class="post">
+            <div class="post" data-layout="vertical">
               <img
                 src="/images/post-image.jpg"
                 alt="Post image"
@@ -143,7 +152,7 @@
                 </a>
               </div>
             </div>
-            <div class="post">
+            <div class="post" data-layout="vertical">
               <img
                 src="/images/post-image.jpg"
                 alt="Post image"
@@ -183,10 +192,82 @@
         </div>
       </section>
       <section class="section">
-        <div class="wrapper">
+        <div class="wrapper flow">
           <h2 class="header-lg">Archive</h2>
-          <div class="grid">
-            <div class="post">
+          <div class="posts">
+            <div class="post" data-layout="horizontal">
+              <img
+                src="/images/post-image.jpg"
+                alt="Post image"
+                class="post__image"
+              />
+              <div class="post__content flow">
+                <a href="#" class="post__category">Category</a>
+                <h3 class="post__title">
+                  Overcoming Imposter Syndrome: How to Trust Yourself & Take
+                  Action
+                </h3>
+                <p class="post__preview">
+                  Break free from self-doubt and step into your power with
+                  confidence.
+                </p>
+                <a href="#"
+                  >Read post
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-up-right"
+                  >
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="post" data-layout="horizontal">
+              <img
+                src="/images/post-image.jpg"
+                alt="Post image"
+                class="post__image"
+              />
+              <div class="post__content flow">
+                <a href="#" class="post__category">Category</a>
+                <h3 class="post__title">
+                  Overcoming Imposter Syndrome: How to Trust Yourself & Take
+                  Action
+                </h3>
+                <p class="post__preview">
+                  Break free from self-doubt and step into your power with
+                  confidence.
+                </p>
+                <a href="#"
+                  >Read post
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-up-right"
+                  >
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="post" data-layout="horizontal">
               <img
                 src="/images/post-image.jpg"
                 alt="Post image"
