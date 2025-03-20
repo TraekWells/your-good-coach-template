@@ -22,11 +22,17 @@ p {
   font-size: var(--font-size-base);
 }
 
+p,
+ul,
+ol {
+  line-height: var(--font-lineheight-4);
+}
+
 a {
   color: var(--color-link);
 }
 
-ul:not(.prose) {
+ul:not(.post-content ul) {
   list-style-type: none;
   padding-inline-start: 0;
 
@@ -134,5 +140,38 @@ a:not(button):not(nav a) {
 
   svg {
     transition: var(--transition-fast);
+  }
+}
+
+.prose-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+
+  @include media("lg") {
+    gap: var(--space-2xl);
+    flex-direction: row-reverse;
+  }
+
+  .content {
+    flex: 1 1 auto;
+    p {
+      max-width: unset;
+    }
+  }
+
+  .sidebar {
+    flex: 0 0 auto;
+    @include media("lg") {
+      flex: 0 0 18rem;
+    }
+  }
+
+  h2 {
+    font-size: var(--font-size-large);
+
+    &:not(:first-child) {
+      margin-block-start: var(--space-xl);
+    }
   }
 }
