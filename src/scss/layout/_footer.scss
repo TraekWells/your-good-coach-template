@@ -14,10 +14,6 @@
     img {
       align-self: flex-start;
     }
-
-    @include media("md") {
-      flex-direction: row;
-    }
   }
 
   &__pages {
@@ -30,7 +26,7 @@
 
   &__page-list {
     &:not(:last-child) {
-      margin-inline-end: var(--space-lg);
+      margin-inline-end: var(--space-2xl);
     }
   }
 }

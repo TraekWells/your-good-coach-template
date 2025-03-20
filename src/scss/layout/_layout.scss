@@ -7,6 +7,10 @@
     minmax(var(--grid-min-item-size, 16rem), 1fr)
   );
   gap: var(--space-lg);
+
+  &[data-alignment="align-items-center"] {
+    align-items: center;
+  }
 }
 
 /* A split 50/50 layout */
