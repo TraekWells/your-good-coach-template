@@ -1,9 +1,12 @@
 .giant-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  text-align: center;
   font-size: var(--font-size-2xl);
-
   max-width: var(--size-content-3);
+  gap: var(--space-lg);
+  line-height: var(--font-lineheight-1);
 
   cite {
     font-size: var(--font-size-large);
@@ -12,8 +15,9 @@
   &::before {
     content: open-quote;
     position: relative;
-    top: 4rem;
+    // top: 4rem;
     color: var(--color-primary);
-    font-size: 7rem;
+    font-size: 6rem;
+    height: 4rem;
   }
 }
