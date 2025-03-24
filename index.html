@@ -29,7 +29,7 @@
     </style>
   </head>
   <body>
-    <header class="header header--home">
+    <header class="header" data-variant="home">
       <nav class="navbar">
         <a href="/">
           <img
@@ -91,21 +91,15 @@
           </svg>
         </button>
       </nav>
-      <div class="wrapper">
-        <img
-          src="/images/hero-image.png"
-          alt="Hero image"
-          class="header__image"
-        />
+      <div class="wrapper" data-wrapper="narrow">
         <div class="header__content">
           <h1 class="header-2xl">
-            <span>Shift Your Mindset.</span>
-            <span>Unlock Your Potential.</span>
-            <span>Build Your Dream Business.</span>
+            <span><strong>Shift</strong> Your Mindset.</span>
+            <span><strong>Unlock</strong> Your Potential.</span>
+            <span><strong>Build</strong> Your Dream Business.</span>
           </h1>
           <p class="lead">
-            Helping women break free from self-doubt and gain the clarity,
-            confidence, and strategy to build a purposeful business.
+            Helping women gain clarity and confidence to build a business.
           </p>
           <a href="#" class="button button__primary"
             >Get started today
@@ -126,8 +120,15 @@
             </svg>
           </a>
         </div>
+        <div class="header__image-wrapper">
+          <img
+            src="/images/hero-image.png"
+            alt="Hero image"
+            class="header__image-image"
+          />
+          <img src="/images/stars.svg" class="header__image-stars" alt="" />
+        </div>
       </div>
-      <img class="header__wordmark" src="/images/confidence-wordmark.svg" />
     </header>
     <main>
       <section

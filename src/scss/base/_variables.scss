@@ -1,7 +1,7 @@
 :root {
-  --color-primary-lightest: hsl(171, 33%, 96%);
+  --color-primary-lightest: #f1f8f7;
   --color-primary-lighter: hsl(166, 73%, 52%);
-  --color-primary-light: hsl(165, 87%, 35%);
+  --color-primary-light: #0ca780;
   --color-primary: hsl(165, 96%, 19%);
   --color-primary-dark: hsl(165, 98%, 14%);
   --color-primary-darkest: hsl(165, 100%, 9%);
@@ -43,7 +43,7 @@
   --font-size-medium: var(--font-size-3);
   --font-size-large: var(--font-size-5);
   --font-size-xl: var(--font-size-6);
-  --font-size-2xl: var(--font-size-7);
+  --font-size-2xl: 3rem;
 
   --border-radius-sm: var(--border-size-2);
   --border-radius-md: var(--border-size-3);

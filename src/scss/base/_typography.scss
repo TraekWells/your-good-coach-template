@@ -86,6 +86,7 @@ a:not(button):not(nav a) {
 
 .lead {
   font-size: var(--font-size-medium);
+  max-width: var(--size-content-2);
 }
 
 .eyebrow {

@@ -3,19 +3,19 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   max-width: var(--size-content-3);
   gap: var(--space-lg);
-  line-height: var(--font-lineheight-1);
+  line-height: var(--font-lineheight-3);
 
   cite {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-normal);
   }
 
   &::before {
     content: open-quote;
     position: relative;
-    // top: 4rem;
     color: var(--color-primary);
     font-size: 6rem;
     height: 4rem;
