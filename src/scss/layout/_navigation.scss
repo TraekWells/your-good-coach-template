@@ -15,7 +15,8 @@
   }
 
   &__logo {
-    width: 5rem;
+    width: 4rem;
+    z-index: 5;
   }
 
   &__item {
@@ -38,14 +39,24 @@
     list-style: none;
     display: none;
 
+    &[aria-expanded="true"] {
+      position: absolute;
+      display: flex;
+      gap: var(--space-lg);
+      flex-direction: column;
+      inset: 0;
+      background-color: var(--color-primary-lightest);
+    }
+
     @include media("md") {
       display: flex;
     }
   }
 }
 
-.mobile-menu {
+.mobile-menu-trigger {
   display: block;
+  z-index: 5;
 
   @include media("md") {
     display: none;
