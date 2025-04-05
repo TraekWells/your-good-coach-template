@@ -10,6 +10,15 @@ const handleMobileNavToggle = () => {
   const hamburgerIcon = mobileNavToggle.querySelector(
     '[data-js="hamburger-icon"]'
   ) as HTMLElement;
+  const firstLine = hamburgerIcon.querySelector(
+    "[data-js='hamburger-line-1'"
+  ) as HTMLElement;
+  const secondLine = hamburgerIcon.querySelector(
+    "[data-js='hamburger-line-2'"
+  ) as HTMLElement;
+  const thirdLine = hamburgerIcon.querySelector(
+    "[data-js='hamburger-line-3'"
+  ) as HTMLElement;
 
   const menuItems = mobileNav.querySelectorAll("li");
 
@@ -17,9 +26,9 @@ const handleMobileNavToggle = () => {
     mobileNav.setAttribute("aria-expanded", "false");
     mobileNavToggle.setAttribute("data-js-state", "closed");
     animate(mobileNav, { opacity: [1, 0] }, { duration: 0.3 });
-    animate(hamburgerIcon.children[1], { rotate: [0, 0] }, { duration: 0.3 });
-    animate(hamburgerIcon.children[0], { opacity: [0, 1] }, { duration: 0.3 });
-    animate(hamburgerIcon.children[2], { rotate: [0, 0] }, { duration: 0.3 });
+    animate(firstLine, { rotate: [45, 0], y: [5, 0] }, { duration: 0.3 });
+    animate(secondLine, { opacity: [0, 1] }, { duration: 0.3 });
+    animate(thirdLine, { rotate: [-45, 0], y: [-7, 0] }, { duration: 0.3 });
   } else {
     mobileNav.setAttribute("aria-expanded", "true");
     mobileNavToggle.setAttribute("data-js-state", "open");
@@ -29,9 +38,10 @@ const handleMobileNavToggle = () => {
       { opacity: [0, 1], transform: ["translateY(-3px)", "translateY(0)"] },
       { delay: stagger(0.1, { startDelay: 0.3 }) }
     );
-    animate(hamburgerIcon.children[0], { opacity: 0 }, { duration: 0.3 });
-    animate(hamburgerIcon.children[1], { rotate: [0, 45] }, { duration: 0.3 });
-    animate(hamburgerIcon.children[2], { rotate: [0, -45] }, { duration: 0.3 });
+
+    animate(firstLine, { rotate: [0, 45], y: [0, 5] }, { duration: 0.3 });
+    animate(secondLine, { opacity: [1, 0] }, { duration: 0.3 });
+    animate(thirdLine, { rotate: [0, -45], y: [0, -7] }, { duration: 0.3 });
   }
 };
 

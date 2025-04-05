@@ -40,7 +40,7 @@
   <body>
     <header class="header" data-variant="home">
       <nav class="navbar">
-        <a href="/">
+        <a href="/" class="navbar__logo-link">
           <img
             src="/images/logo.png"
             class="navbar__logo"
@@ -96,12 +96,12 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-menu"
+            class="hamburger-icon lucide-menu"
             data-js="hamburger-icon"
           >
-            <line x1="4" x2="20" y1="12" y2="12" />
-            <line x1="4" x2="20" y1="6" y2="6" />
-            <line x1="4" x2="20" y1="18" y2="18" />
+            <line x1="4" x2="20" y1="12" y2="12" data-js="hamburger-line-2" />
+            <line x1="4" x2="20" y1="6" y2="6" data-js="hamburger-line-1" />
+            <line x1="4" x2="20" y1="18" y2="18" data-js="hamburger-line-3" />
           </svg>
         </button>
       </nav>
