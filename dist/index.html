@@ -35,13 +35,13 @@
         font-display: swap;
       }
     </style>
-    <script type="module" crossorigin src="/your-good-coach-template/assets/main-g9X3OC_x.js"></script>
-    <link rel="stylesheet" crossorigin href="/your-good-coach-template/assets/main-Dx2uhBuN.css">
+    <script type="module" crossorigin src="/your-good-coach-template/assets/main-BIcou6SW.js"></script>
+    <link rel="stylesheet" crossorigin href="/your-good-coach-template/assets/main-DPQga-21.css">
   </head>
   <body>
     <header class="header" data-variant="home">
       <nav class="navbar">
-        <a href="/">
+        <a href="/" class="navbar__logo-link">
           <img
             src="/your-good-coach-template/images/logo.png"
             class="navbar__logo"
@@ -82,7 +82,11 @@
             </a>
           </li>
         </ul>
-        <button class="button--unstyled mobile-menu" data-js="mobile-menu">
+        <button
+          class="button--unstyled mobile-menu-trigger"
+          data-js="mobile-menu-trigger"
+          data-js-state="closed"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -93,11 +97,12 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-menu"
+            class="hamburger-icon lucide-menu"
+            data-js="hamburger-icon"
           >
-            <line x1="4" x2="20" y1="12" y2="12" />
-            <line x1="4" x2="20" y1="6" y2="6" />
-            <line x1="4" x2="20" y1="18" y2="18" />
+            <line x1="4" x2="20" y1="12" y2="12" data-js="hamburger-line-2" />
+            <line x1="4" x2="20" y1="6" y2="6" data-js="hamburger-line-1" />
+            <line x1="4" x2="20" y1="18" y2="18" data-js="hamburger-line-3" />
           </svg>
         </button>
       </nav>
